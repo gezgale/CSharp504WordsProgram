@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Logat504DataSet" targetNamespace="http://tempuri.org/Logat504DataSet.xsd" xmlns:mstns="http://tempuri.org/Logat504DataSet.xsd" xmlns="http://tempuri.org/Logat504DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Logat504ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Logat504ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Logat504.Properties.Settings.GlobalReference.Default.Logat504ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="xtblViewMarksTableAdapter" GeneratorDataComponentClassName="xtblViewMarksTableAdapter" Name="xtblViewMarks" UserDataComponentName="xtblViewMarksTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Logat504ConnectionString (Settings)" DbObjectName="Logat504.dbo.xtblViewMarks" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT UserNAme, NameOfUsr, SNameOfUsr, AzmoonTitle, AzmoonDate, SoalateSahih, SoalateEshtebah, BedooneJavab, TotalMark FROM dbo.xtblViewMarks</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="UserNAme" DataSetColumn="UserNAme" />
+              <Mapping SourceColumn="NameOfUsr" DataSetColumn="NameOfUsr" />
+              <Mapping SourceColumn="SNameOfUsr" DataSetColumn="SNameOfUsr" />
+              <Mapping SourceColumn="AzmoonTitle" DataSetColumn="AzmoonTitle" />
+              <Mapping SourceColumn="AzmoonDate" DataSetColumn="AzmoonDate" />
+              <Mapping SourceColumn="SoalateSahih" DataSetColumn="SoalateSahih" />
+              <Mapping SourceColumn="SoalateEshtebah" DataSetColumn="SoalateEshtebah" />
+              <Mapping SourceColumn="BedooneJavab" DataSetColumn="BedooneJavab" />
+              <Mapping SourceColumn="TotalMark" DataSetColumn="TotalMark" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="xtblKarnameTableAdapter" GeneratorDataComponentClassName="xtblKarnameTableAdapter" Name="xtblKarname" UserDataComponentName="xtblKarnameTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Logat504ConnectionString (Settings)" DbObjectName="Logat504.dbo.xtblKarname" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT UserNAme, Expr1, AzmoonTitle, AzmoonDate, SoalateSahih, SoalateEshtebah, BedooneJavab, TotalMark FROM dbo.xtblKarname</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="UserNAme" DataSetColumn="UserNAme" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="AzmoonTitle" DataSetColumn="AzmoonTitle" />
+              <Mapping SourceColumn="AzmoonDate" DataSetColumn="AzmoonDate" />
+              <Mapping SourceColumn="SoalateSahih" DataSetColumn="SoalateSahih" />
+              <Mapping SourceColumn="SoalateEshtebah" DataSetColumn="SoalateEshtebah" />
+              <Mapping SourceColumn="BedooneJavab" DataSetColumn="BedooneJavab" />
+              <Mapping SourceColumn="TotalMark" DataSetColumn="TotalMark" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Logat504DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Logat504DataSet" msprop:Generator_UserDSName="Logat504DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="xtblViewMarks" msprop:Generator_TableClassName="xtblViewMarksDataTable" msprop:Generator_TableVarName="tablextblViewMarks" msprop:Generator_TablePropName="xtblViewMarks" msprop:Generator_RowDeletingName="xtblViewMarksRowDeleting" msprop:Generator_UserTableName="xtblViewMarks" msprop:Generator_RowChangingName="xtblViewMarksRowChanging" msprop:Generator_RowEvHandlerName="xtblViewMarksRowChangeEventHandler" msprop:Generator_RowDeletedName="xtblViewMarksRowDeleted" msprop:Generator_RowEvArgName="xtblViewMarksRowChangeEvent" msprop:Generator_RowChangedName="xtblViewMarksRowChanged" msprop:Generator_RowClassName="xtblViewMarksRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserNAme" msprop:Generator_ColumnVarNameInTable="columnUserNAme" msprop:Generator_ColumnPropNameInRow="UserNAme" msprop:Generator_ColumnPropNameInTable="UserNAmeColumn" msprop:Generator_UserColumnName="UserNAme">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NameOfUsr" msprop:Generator_ColumnVarNameInTable="columnNameOfUsr" msprop:Generator_ColumnPropNameInRow="NameOfUsr" msprop:Generator_ColumnPropNameInTable="NameOfUsrColumn" msprop:Generator_UserColumnName="NameOfUsr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SNameOfUsr" msprop:Generator_ColumnVarNameInTable="columnSNameOfUsr" msprop:Generator_ColumnPropNameInRow="SNameOfUsr" msprop:Generator_ColumnPropNameInTable="SNameOfUsrColumn" msprop:Generator_UserColumnName="SNameOfUsr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AzmoonTitle" msprop:Generator_ColumnVarNameInTable="columnAzmoonTitle" msprop:Generator_ColumnPropNameInRow="AzmoonTitle" msprop:Generator_ColumnPropNameInTable="AzmoonTitleColumn" msprop:Generator_UserColumnName="AzmoonTitle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AzmoonDate" msprop:Generator_ColumnVarNameInTable="columnAzmoonDate" msprop:Generator_ColumnPropNameInRow="AzmoonDate" msprop:Generator_ColumnPropNameInTable="AzmoonDateColumn" msprop:Generator_UserColumnName="AzmoonDate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SoalateSahih" msprop:Generator_ColumnVarNameInTable="columnSoalateSahih" msprop:Generator_ColumnPropNameInRow="SoalateSahih" msprop:Generator_ColumnPropNameInTable="SoalateSahihColumn" msprop:Generator_UserColumnName="SoalateSahih" type="xs:int" />
+              <xs:element name="SoalateEshtebah" msprop:Generator_ColumnVarNameInTable="columnSoalateEshtebah" msprop:Generator_ColumnPropNameInRow="SoalateEshtebah" msprop:Generator_ColumnPropNameInTable="SoalateEshtebahColumn" msprop:Generator_UserColumnName="SoalateEshtebah" type="xs:int" />
+              <xs:element name="BedooneJavab" msprop:Generator_ColumnVarNameInTable="columnBedooneJavab" msprop:Generator_ColumnPropNameInRow="BedooneJavab" msprop:Generator_ColumnPropNameInTable="BedooneJavabColumn" msprop:Generator_UserColumnName="BedooneJavab" type="xs:int" />
+              <xs:element name="TotalMark" msprop:Generator_ColumnVarNameInTable="columnTotalMark" msprop:Generator_ColumnPropNameInRow="TotalMark" msprop:Generator_ColumnPropNameInTable="TotalMarkColumn" msprop:Generator_UserColumnName="TotalMark" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="xtblKarname" msprop:Generator_TableClassName="xtblKarnameDataTable" msprop:Generator_TableVarName="tablextblKarname" msprop:Generator_TablePropName="xtblKarname" msprop:Generator_RowDeletingName="xtblKarnameRowDeleting" msprop:Generator_UserTableName="xtblKarname" msprop:Generator_RowChangingName="xtblKarnameRowChanging" msprop:Generator_RowEvHandlerName="xtblKarnameRowChangeEventHandler" msprop:Generator_RowDeletedName="xtblKarnameRowDeleted" msprop:Generator_RowEvArgName="xtblKarnameRowChangeEvent" msprop:Generator_RowChangedName="xtblKarnameRowChanged" msprop:Generator_RowClassName="xtblKarnameRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserNAme" msprop:Generator_ColumnVarNameInTable="columnUserNAme" msprop:Generator_ColumnPropNameInRow="UserNAme" msprop:Generator_ColumnPropNameInTable="UserNAmeColumn" msprop:Generator_UserColumnName="UserNAme">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Expr1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AzmoonTitle" msprop:Generator_ColumnVarNameInTable="columnAzmoonTitle" msprop:Generator_ColumnPropNameInRow="AzmoonTitle" msprop:Generator_ColumnPropNameInTable="AzmoonTitleColumn" msprop:Generator_UserColumnName="AzmoonTitle">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AzmoonDate" msprop:Generator_ColumnVarNameInTable="columnAzmoonDate" msprop:Generator_ColumnPropNameInRow="AzmoonDate" msprop:Generator_ColumnPropNameInTable="AzmoonDateColumn" msprop:Generator_UserColumnName="AzmoonDate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SoalateSahih" msprop:Generator_ColumnVarNameInTable="columnSoalateSahih" msprop:Generator_ColumnPropNameInRow="SoalateSahih" msprop:Generator_ColumnPropNameInTable="SoalateSahihColumn" msprop:Generator_UserColumnName="SoalateSahih" type="xs:int" />
+              <xs:element name="SoalateEshtebah" msprop:Generator_ColumnVarNameInTable="columnSoalateEshtebah" msprop:Generator_ColumnPropNameInRow="SoalateEshtebah" msprop:Generator_ColumnPropNameInTable="SoalateEshtebahColumn" msprop:Generator_UserColumnName="SoalateEshtebah" type="xs:int" />
+              <xs:element name="BedooneJavab" msprop:Generator_ColumnVarNameInTable="columnBedooneJavab" msprop:Generator_ColumnPropNameInRow="BedooneJavab" msprop:Generator_ColumnPropNameInTable="BedooneJavabColumn" msprop:Generator_UserColumnName="BedooneJavab" type="xs:int" />
+              <xs:element name="TotalMark" msprop:Generator_ColumnVarNameInTable="columnTotalMark" msprop:Generator_ColumnPropNameInRow="TotalMark" msprop:Generator_ColumnPropNameInTable="TotalMarkColumn" msprop:Generator_UserColumnName="TotalMark" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:xtblViewMarks" />
+      <xs:field xpath="mstns:UserNAme" />
+    </xs:unique>
+    <xs:unique name="xtblKarname_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:xtblKarname" />
+      <xs:field xpath="mstns:UserNAme" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

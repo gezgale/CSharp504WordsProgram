@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 11.75" name="LSC_504Logat">
+  <DataContextMoniker Name="/LSC_504LogatDataContext" />
+  <nestedChildShapes>
+    <classShape Id="256fc34a-8618-46f5-b1b8-af60ec7d19a9" absoluteBounds="0.75, 2, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/LSC_504LogatDataContext/tblAzmoonLevel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db15c4e5-3434-4e95-9676-737336e35cef" absoluteBounds="0.765, 2.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="431df078-581f-47ba-82ce-008add6965ec" absoluteBounds="0.75, 4.375, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/LSC_504LogatDataContext/tblUserType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd3b0e45-90fd-4429-9ad3-f90191390403" absoluteBounds="0.765, 4.835, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0f24a8fd-8855-480f-ba9e-6386f53e75cf" absoluteBounds="6.25, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/LSC_504LogatDataContext/tblAzmoonNatijeh" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c88300d1-92ef-40ee-a106-ce319fcbdd71" absoluteBounds="6.265, 1.21, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c780e07-2451-464f-a1f3-5dfa31a8efb8" absoluteBounds="6.25, 7.125, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/LSC_504LogatDataContext/tblAzmoonSoalat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3de900c6-3758-4701-8880-27c9c4492cbe" absoluteBounds="6.265, 7.585, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="112e5615-d7c8-4b61-a363-358ba3b8eb22" absoluteBounds="3.5, 1.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LSC_504LogatDataContext/tblAzmoonTitle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="153beab7-67e4-41d8-a77f-39c724c5a941" absoluteBounds="3.515, 1.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5bdae1f5-638c-4b75-b4f7-0123b92445ff" absoluteBounds="6.25, 3.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/LSC_504LogatDataContext/tblLoghatHa" />
+      <nestedChildShapes>
+        <elementListCompartment Id="681d3e43-0451-47e1-b285-f54688560ef3" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f85ba4dc-628d-49da-8e87-f6876fdb6852" absoluteBounds="3.5, 3.75, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/LSC_504LogatDataContext/tblUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2b57a45d-e2a7-4840-ae85-f7028ceb4c96" absoluteBounds="3.515, 4.21, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 2.31666602295399); (5.97916666666667 : 2.31666602295399 : JumpStart); (6.14583333333333 : 2.31666602295399 : JumpEnd); (6.25 : 2.31666602295399)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LSC_504LogatDataContext/tblAzmoonTitle/tblAzmoonTitle_tblAzmoonNatijeh" />
+      <nodes>
+        <classShapeMoniker Id="112e5615-d7c8-4b61-a363-358ba3b8eb22" />
+        <classShapeMoniker Id="0f24a8fd-8855-480f-ba9e-6386f53e75cf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.03494326402744); (5.875 : 2.03494326402744); (5.875 : 6.75); (7.25 : 6.75); (7.25 : 7.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LSC_504LogatDataContext/tblAzmoonTitle/tblAzmoonTitle_tblAzmoonSoalat" />
+      <nodes>
+        <classShapeMoniker Id="112e5615-d7c8-4b61-a363-358ba3b8eb22" />
+        <classShapeMoniker Id="8c780e07-2451-464f-a1f3-5dfa31a8efb8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.41429768880208); (3.5 : 2.41429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LSC_504LogatDataContext/tblAzmoonLevel/tblAzmoonLevel_tblAzmoonTitle" />
+      <nodes>
+        <classShapeMoniker Id="256fc34a-8618-46f5-b1b8-af60ec7d19a9" />
+        <classShapeMoniker Id="112e5615-d7c8-4b61-a363-358ba3b8eb22" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 3.81153746153846); (6.0625 : 3.24903746153846); (6.0625 : 1.91637927422921); (6.25 : 1.91637927422921)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LSC_504LogatDataContext/tblUser/tblUser_tblAzmoonNatijeh" />
+      <nodes>
+        <classShapeMoniker Id="f85ba4dc-628d-49da-8e87-f6876fdb6852" />
+        <classShapeMoniker Id="0f24a8fd-8855-480f-ba9e-6386f53e75cf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.94602027167877); (6.25 : 4.94602027167877)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LSC_504LogatDataContext/tblUser/tblUser_tblLoghatHa" />
+      <nodes>
+        <classShapeMoniker Id="f85ba4dc-628d-49da-8e87-f6876fdb6852" />
+        <classShapeMoniker Id="5bdae1f5-638c-4b75-b4f7-0123b92445ff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.96922525892655); (3.5 : 4.96922525892655)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/LSC_504LogatDataContext/tblUserType/tblUserType_tblUser" />
+      <nodes>
+        <classShapeMoniker Id="431df078-581f-47ba-82ce-008add6965ec" />
+        <classShapeMoniker Id="f85ba4dc-628d-49da-8e87-f6876fdb6852" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="854f4e93-a81e-4b0f-888a-c29d80a64ee2" absoluteBounds="0.75, 5.75, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/LSC_504LogatDataContext/xtblAzmoonTitle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e0fbfb8-53c5-4f2e-8348-4f10cc158781" absoluteBounds="0.76500000000000012, 6.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1dc74281-ddb3-460f-acea-65fa83edd540" absoluteBounds="0.75, 7.25, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/LSC_504LogatDataContext/xtblViewMark" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2905f08-076e-4205-85c7-c15919ea0403" absoluteBounds="0.76500000000000012, 7.7100000000000009, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="35b2d72c-0e3b-49dc-ac29-f49e5ba39a30" absoluteBounds="3.625, 6.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/LSC_504LogatDataContext/xtblDropUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="60cb4bab-60e3-4901-bcf7-94fb709642ab" absoluteBounds="3.64, 7.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="746e5b55-0f1a-4905-9ce5-2476cb0084ca" absoluteBounds="9, 3.625, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/LSC_504LogatDataContext/xtblKarname" />
+      <nestedChildShapes>
+        <elementListCompartment Id="da98eb75-a8aa-471e-a03e-476eba448387" absoluteBounds="9.015, 4.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5b418075-ba92-42a8-89e4-43d46041ffa9" absoluteBounds="7.375, 10.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/LSC_504LogatDataContext/xtblAvgKarname" />
+      <nestedChildShapes>
+        <elementListCompartment Id="36607d0d-65f1-43c4-bcf6-1a5cdd940576" absoluteBounds="7.39, 10.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

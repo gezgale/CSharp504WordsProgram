@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ACFF4EF6-5B00-4836-9C52-AB1B94561112}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Logat504</RootNamespace>
+    <AssemblyName>Logat504</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class_Current_Day_Name.cs" />
+    <Compile Include="Class_Search1.cs" />
+    <Compile Include="Class_Search2.cs" />
+    <Compile Include="Class_Search3.cs" />
+    <Compile Include="Class_Search4.cs" />
+    <Compile Include="Class_ShamsiDate.cs" />
+    <Compile Include="Class_tblAzmoonLevels.cs" />
+    <Compile Include="Class_tblAzmoonNatijeh.cs" />
+    <Compile Include="Class_tblAzmoonSoalat.cs" />
+    <Compile Include="Class_tblAzmoonTitle.cs" />
+    <Compile Include="Class_tblLoghatHa.cs" />
+    <Compile Include="Class_tblUsers.cs" />
+    <Compile Include="Class_XtblUsers.cs" />
+    <Compile Include="frmActAzmoon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActAzmoon.Designer.cs">
+      <DependentUpon>frmActAzmoon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAzmoonLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAzmoonLevel.Designer.cs">
+      <DependentUpon>frmAzmoonLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDefineAzmoon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDefineAzmoon.Designer.cs">
+      <DependentUpon>frmDefineAzmoon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDefineAzmoonDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDefineAzmoonDetails.Designer.cs">
+      <DependentUpon>frmDefineAzmoonDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditProfile.Designer.cs">
+      <DependentUpon>frmEditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditProfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditProfiles.Designer.cs">
+      <DependentUpon>frmEditProfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMdi.Designer.cs">
+      <DependentUpon>frmMainMdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRepAzmoonHa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRepAzmoonHa.Designer.cs">
+      <DependentUpon>frmRepAzmoonHa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSabteLoghat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSabteLoghat.Designer.cs">
+      <DependentUpon>frmSabteLoghat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchLogat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchLogat.Designer.cs">
+      <DependentUpon>frmSearchLogat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewMarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewMarks.Designer.cs">
+      <DependentUpon>frmViewMarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewReading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewReading.Designer.cs">
+      <DependentUpon>frmViewReading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVars.cs" />
+    <Compile Include="Logat504DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Logat504DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LSC_504Logat.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LSC_504Logat.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmActAzmoon.resx">
+      <DependentUpon>frmActAzmoon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAzmoonLevel.resx">
+      <DependentUpon>frmAzmoonLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefineAzmoon.resx">
+      <DependentUpon>frmDefineAzmoon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDefineAzmoonDetails.resx">
+      <DependentUpon>frmDefineAzmoonDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditProfile.resx">
+      <DependentUpon>frmEditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditProfiles.resx">
+      <DependentUpon>frmEditProfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_Azmoon.rdlc" />
+    <None Include="app.config" />
+    <None Include="Logat504DataSet.xsc">
+      <DependentUpon>Logat504DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Logat504DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Logat504DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Logat504DataSet.xss">
+      <DependentUpon>Logat504DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LSC_504Logat.dbml.layout">
+      <DependentUpon>LSC_504Logat.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="frmMainMdi.resx">
+      <DependentUpon>frmMainMdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRepAzmoonHa.resx">
+      <DependentUpon>frmRepAzmoonHa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSabteLoghat.resx">
+      <DependentUpon>frmSabteLoghat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchLogat.resx">
+      <DependentUpon>frmSearchLogat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewMarks.resx">
+      <DependentUpon>frmViewMarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewReading.resx">
+      <DependentUpon>frmViewReading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="LSC_504Logat.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>LSC_504Logat.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\xtblAvgKarname.datasource" />
+    <None Include="Properties\DataSources\xtblKarname.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckMarkS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZarbDarS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login0Manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purse_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_form_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\knetworkconf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login0Manager1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vista-Shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traveler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\offline-user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows-Explorer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-group-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_Chrt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddressBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check_spelling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_Btn_Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_Sma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_Btn_Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_Btn_Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh1001_Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_Sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

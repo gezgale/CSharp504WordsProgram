@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Logat504" Class="LSC_504LogatDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ALI3-PC\MSSQL2008;Initial Catalog=Logat504;Integrated Security=True" SettingsObjectName="Logat504.Properties.Settings" SettingsPropertyName="Logat504ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tblAzmoonLevels" Member="tblAzmoonLevels">
+    <Type Name="tblAzmoonLevel">
+      <Column Name="AzmoonLevelID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AzmoonLevelDescription" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Association Name="tblAzmoonLevel_tblAzmoonTitle" Member="tblAzmoonTitles" ThisKey="AzmoonLevelID" OtherKey="AzmoonLevelID" Type="tblAzmoonTitle" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblUserTypes" Member="tblUserTypes">
+    <Type Name="tblUserType">
+      <Column Name="UserTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserTypeDescription" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Association Name="tblUserType_tblUser" Member="tblUsers" ThisKey="UserTypeID" OtherKey="UserTypeID" Type="tblUser" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAzmoonNatijeh" Member="tblAzmoonNatijehs">
+    <Type Name="tblAzmoonNatijeh">
+      <Column Name="NatijehID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AzmoonTitleID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserNAme" Type="System.String" DbType="NVarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AzmoonDate" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="SoalateSahih" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SoalateEshtebah" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BedooneJavab" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TotalMark" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="tblAzmoonTitle_tblAzmoonNatijeh" Member="tblAzmoonTitle" ThisKey="AzmoonTitleID" OtherKey="AzmoonID" Type="tblAzmoonTitle" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="tblUser_tblAzmoonNatijeh" Member="tblUser" ThisKey="UserNAme" OtherKey="UserNAme" Type="tblUser" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAzmoonSoalat" Member="tblAzmoonSoalats">
+    <Type Name="tblAzmoonSoalat">
+      <Column Name="SoalID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AzmoonTitleID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="SoAlDescription" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Gozineie1" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Gozineie2" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Gozineie3" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Gozineie4" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="GozineieSahih" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="tblAzmoonTitle_tblAzmoonSoalat" Member="tblAzmoonTitle" ThisKey="AzmoonTitleID" OtherKey="AzmoonID" Type="tblAzmoonTitle" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAzmoonTitle" Member="tblAzmoonTitles">
+    <Type Name="tblAzmoonTitle">
+      <Column Name="AzmoonID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AzmoonLevelID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AzmoonTitle" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="AzmoonReading" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="tblAzmoonTitle_tblAzmoonNatijeh" Member="tblAzmoonNatijehs" ThisKey="AzmoonID" OtherKey="AzmoonTitleID" Type="tblAzmoonNatijeh" />
+      <Association Name="tblAzmoonTitle_tblAzmoonSoalat" Member="tblAzmoonSoalats" ThisKey="AzmoonID" OtherKey="AzmoonTitleID" Type="tblAzmoonSoalat" />
+      <Association Name="tblAzmoonLevel_tblAzmoonTitle" Member="tblAzmoonLevel" ThisKey="AzmoonLevelID" OtherKey="AzmoonLevelID" Type="tblAzmoonLevel" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblLoghatHa" Member="tblLoghatHas">
+    <Type Name="tblLoghatHa">
+      <Column Name="LogatID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LogatEnglish" Type="System.String" DbType="NVarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LoghatFarsi" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="LoghatMotaradef" Type="System.String" DbType="NVarChar(350) NOT NULL" CanBeNull="false" />
+      <Column Name="LogatSaier" Type="System.String" DbType="NVarChar(350) NOT NULL" CanBeNull="false" />
+      <Column Name="DateOfAdd" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="AdderUserName" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Association Name="tblUser_tblLoghatHa" Member="tblUser" ThisKey="AdderUserName" OtherKey="UserNAme" Type="tblUser" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblUsers" Member="tblUsers">
+    <Type Name="tblUser">
+      <Column Name="UsersID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserNAme" Type="System.String" DbType="NVarChar(150) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserPWA" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="UserTypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NameOfUsr" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SNameOfUsr" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MobilePhone" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="EmailOfUser" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Association Name="tblUser_tblAzmoonNatijeh" Member="tblAzmoonNatijehs" ThisKey="UserNAme" OtherKey="UserNAme" Type="tblAzmoonNatijeh" />
+      <Association Name="tblUser_tblLoghatHa" Member="tblLoghatHas" ThisKey="UserNAme" OtherKey="AdderUserName" Type="tblLoghatHa" />
+      <Association Name="tblUserType_tblUser" Member="tblUserType" ThisKey="UserTypeID" OtherKey="UserTypeID" Type="tblUserType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.xtblAzmoonTitles" Member="xtblAzmoonTitles">
+    <Type Name="xtblAzmoonTitle">
+      <Column Name="AzmoonID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="Expr1" Type="System.String" DbType="NVarChar(327) NOT NULL" CanBeNull="false" />
+      <Column Name="AzmoonLevelID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.xtblViewMarks" Member="xtblViewMarks">
+    <Type Name="xtblViewMark">
+      <Column Name="UserNAme" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="NameOfUsr" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SNameOfUsr" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AzmoonTitle" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="AzmoonDate" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="SoalateSahih" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SoalateEshtebah" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BedooneJavab" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TotalMark" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.xtblDropUsers" Member="xtblDropUsers">
+    <Type Name="xtblDropUser">
+      <Column Name="UsersID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="NameSname" Type="System.String" DbType="NVarChar(715) NOT NULL" CanBeNull="false" />
+      <Column Name="UserNAme" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.xtblKarname" Member="xtblKarnames">
+    <Type Name="xtblKarname">
+      <Column Name="UserNAme" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Expr1" Type="System.String" DbType="NVarChar(101) NOT NULL" CanBeNull="false" />
+      <Column Name="AzmoonTitle" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="AzmoonDate" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="SoalateSahih" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SoalateEshtebah" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BedooneJavab" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TotalMark" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.xtblAvgKarname" Member="xtblAvgKarnames">
+    <Type Name="xtblAvgKarname">
+      <Column Name="UserNAme" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Expr1" Type="System.String" DbType="NVarChar(101) NOT NULL" CanBeNull="false" />
+      <Column Name="Expr2" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
